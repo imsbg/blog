@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: imsbg/blog
+  name: git-gateway
   branch: main
 
 media_folder: "public/images"
@@ -14,13 +13,10 @@ collections:
     slug: "{{slug}}"
     format: "frontmatter"
     extension: "md"
+
     fields:
       - { label: "Title", name: "title", widget: "string" }
-
       - { label: "Description", name: "description", widget: "text" }
-
       - { label: "Publish Date", name: "pubDate", widget: "datetime" }
-
       - { label: "Hero Image", name: "heroImage", widget: "image" }
-
       - { label: "Body", name: "body", widget: "markdown" }
